@@ -1,0 +1,36 @@
+.airports-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .airport-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    border-left: 5px solid #28a745;
+    transition: transform 0.3s ease;
+  }
+  
+  .airport-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .airport-card h3 {
+    margin: 0;
+    color: #28a745;
+    text-align: center;
+  }
+  
+  .airport-card p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .airport-card strong {
+    color: #555;
+  }
+  
