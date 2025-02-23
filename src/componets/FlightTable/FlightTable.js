@@ -6,7 +6,6 @@ import { RotateCcw } from "lucide-react";
 const CACHE_KEY = "flightsData";
 const CACHE_EXPIRY_KEY = "flightsDataExpiry";
 const CACHE_DURATION = 24 * 60 * 60 * 1000;
-const KEY=process.env.ACCESS_KEY;
 const FlightTable = () => {
     const [flights, setFlights] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -26,7 +25,7 @@ const FlightTable = () => {
             }
 
             const response = await axios.get(
-                `${process.env.REACT_APP_FLIGHT_API_URL}?access_key=${process.env.ACCESS_KEY}`
+                `${process.env.REACT_APP_FLIGHT_API_URL}?access_key=${process.env.REACT_APP_ACCESS_KEY}`
             );
             const flightData = response.data.data || [];
 
