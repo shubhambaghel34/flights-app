@@ -6,6 +6,7 @@ import { RotateCcw } from "lucide-react";
 const CACHE_KEY = "flightsData";
 const CACHE_EXPIRY_KEY = "flightsDataExpiry";
 const CACHE_DURATION = 24 * 60 * 60 * 1000;
+const KEY=process.env.ACCESS_KEY;
 const FlightTable = () => {
     const [flights, setFlights] = useState([]);
     const [loading, setLoading] = useState(true);
