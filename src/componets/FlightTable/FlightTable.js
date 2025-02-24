@@ -15,6 +15,7 @@ const FlightTable = () => {
 
     const fetchFlights = async (forceRefresh = false) => {
         try {
+
             const cachedData = localStorage.getItem(CACHE_KEY);
             const cacheExpiry = localStorage.getItem(CACHE_EXPIRY_KEY);
 
